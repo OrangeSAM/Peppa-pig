@@ -4,11 +4,12 @@ function writeCode(code) {
     let codeinterval = setInterval(() => {
         n = n + 9;
         domCode.innerHTML += code.substring(n - 9, n);
+        //这里由于速度和代码高亮冲突，所以暂时取消代码高亮。
         // domCode.innerHTML += Prism.highlight(code.substring(n - 9, n), Prism.languages.css);
         // styletag.innerHTML = code.substring(0, n);
         styletag.innerHTML += code.substring(n - 9, n);
 
-        domCode.scrollTop = domCode.scrollHeight; //具体含义待研究
+        domCode.scrollTop = domCode.scrollHeight;
         if (n >= code.length) {
             window.clearInterval(codeinterval);
         }
@@ -270,6 +271,20 @@ body .container :after {
     transform: rotate(50deg);
 }
 
+/*佩奇的裙子*/
+.peppa .dress {
+    top: 120px;
+    background: #F8756D;
+    height: 120px;
+    width: 160px;
+    left: calc(50% - 80px);
+    z-index: -1;
+    -moz-border-radius: 35% 30% 0 0/100% 100% 0 0;
+    -webkit-border-radius: 35%;
+    border-radius: 35% 30% 0 0/100% 100% 0 0;
+    border: 5px solid #EE5253;
+}
+
 .peppa .arm.left {
     left: -28px;
     -moz-transform: rotate(-30deg);
@@ -320,19 +335,7 @@ body .container :after {
     width: 22px;
     background: #FFC4E0;
 }
-/*佩奇的裙子*/
-.peppa .dress {
-    top: 120px;
-    background: #F8756D;
-    height: 120px;
-    width: 160px;
-    left: calc(50% - 80px);
-    z-index: -1;
-    -moz-border-radius: 35% 30% 0 0/100% 100% 0 0;
-    -webkit-border-radius: 35%;
-    border-radius: 35% 30% 0 0/100% 100% 0 0;
-    border: 5px solid #EE5253;
-}
+
 
 /*佩奇的两只脚*/
 .peppa .foot {

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="prism.css">
+    <!-- <link rel="stylesheet" href="prism.css"> -->
     <style>
         body {
             overflow: hidden;
@@ -14,32 +14,6 @@
         #code {
             height: 100vh;
             overflow: hidden;
-        }
-
-        .wave {
-            transition: all .6s;
-            animation: mywave 5s infinite;
-            -webkit-animation: mywave 5s infinite;
-        }
-
-        @keyframes mywave {
-            from {
-                transform: rotateX(0deg);
-            }
-
-            to {
-                transform: rotateX(5deg);
-            }
-        }
-
-        @-webkit-keyframes mywave {
-            from {
-                transform: rotateX(0deg);
-            }
-
-            to {
-                transform: rotateX(5deg);
-            }
         }
     </style>
     <style id="styletag"></style>
@@ -81,12 +55,8 @@
             </div>
         </div>
     </div>
-    <script src="prism.js"></script>
+    <!-- <script src="prism.js"></script> -->
     <script src="main.js"></script>
-    <script>
-        let wave = document.querySelector('#wave');
-        wave.classList.add("wave");
-    </script>
 </body>
 
 </html>
