@@ -186,7 +186,7 @@ body .container :after {
     box-shadow: 15px 0 0 0 #e795c0;
 }
 
-/佩奇的耳朵/
+/*佩奇的耳朵*/
 .peppa .ear {
     top: -40px;
     height: 34px;
