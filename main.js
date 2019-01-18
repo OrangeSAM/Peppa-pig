@@ -51,6 +51,7 @@ body .container :after {
     width: 180px;
     top: calc(45% - (180px / 2));
     left: calc(70% - (180px / 2));
+    z-index:1;
 }
 
 .peppa {
